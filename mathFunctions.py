@@ -19,5 +19,16 @@ def volumePiramide(aresta, altura):
     base = aresta ** 2
     return (base * altura)/3
 
+def areaCilindro(raio, altura):
+    areaBases = 2 * math.PI * raio ** 2
+    areaLateral = 2 * math.PI * raio * altura
+    return areaBases + areaLateral
 
+def volumeCilindro(raio, altura):
+    areaBase = math.PI * raio ** 2
+    return areaBase * altura
+
+def volumeCone(raio, altura):
+    areaBase = math.PI * raio ** 2
+    return (areaBase * altura)/3
 
